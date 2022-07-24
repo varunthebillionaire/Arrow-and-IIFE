@@ -1,0 +1,51 @@
+Q(a). Print odd numbers in an array. 
+Sol. var arr = [1,2,3,4,5,6,7,8,9,10,11,12]
+
+     var odds = arr. filter(n => n%2)
+ 
+     console. log(odds)
+
+(b). Sum of all the numbers in an array.
+Sol. const array = [1,2,3,4,5,6,7]; 
+     let sum = 0; 
+     for (let i = 0; i < array. length; i++) 
+     { sum += array[i]; }
+     console. log(sum);
+
+     using arrow function-
+      
+     var arr = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+     add = function(arr) {
+     return arr.reduce((a, b) => a + b, 0);
+     };
+     var sum = add(arr);
+     console.log(sum)
+(c). Return all the prime numbers in an array.
+Sol. var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+     numArray = numArray.filter((number) => {
+     for (var i = 2; i <= Math.sqrt(number); i++) {
+     if (number % i === 0) return false;
+     }
+      return true;
+     });
+
+      console.log(numArray);
+(d). Return all the palindromes in an array.
+Sol. var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+     numArray = numArray.filter((number) => {
+      for (var i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) return false;
+     }
+     return true;
+     });
+
+     console.log(numArray);
+(e). Convert all the strings to title caps in a string array.
+Sol. const str = "hello guvi";
+     const newStr = str.split(' ')
+     .map(w => w[0].toUpperCase() + w.substring(1).toLowerCase())
+     .join(' ');
+     console.log(newStr);
